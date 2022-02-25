@@ -10,17 +10,58 @@
 </head>
 <body>
     <header>
-        <div class="nav-bar">
-            <div class="nav-left">
+        <div class="nav-bar flex justify-between">
+            <div class="nav-left flex align-center">
                 <h1 class="nav-title">Profile</h1>
-                <ul class="nav-links bar">
-                    <li class="nav-links">Home</li>
-                    <li class="nav-links">My Profile</li>
-                    <li class="nav-links">Find Connections</li>
+                <ul class="nav-links-bar flex">
+                    <li class="nav-links"><a href="#">Home</a></li>
+                    <li class="nav-links"><a href="#">My Profile</a></li>
+                    <li class="nav-links"><a href="#">Find Connections</a></li>
                 </ul>
             </div>
             <button>Sign Out</button>
         </div>
     </header>
+
+    <main class="flex">
+        <div class="col-1">
+            <div class="profile-card">
+                <div class="profile-top">
+                    <img src="./images/jane-m.jpg" alt="">
+                </div>
+                <div class="profile-bot">
+                    <h1 id="profile-name">Jane Doe</h1>
+                    <div class="location">
+                        <p><img src="/icons/map-marker.png" alt="" class="icon"> Seattle</p>
+                    </div>
+                    <div class="bio">
+                        <p>Developer | Engineer | Problem Solver</p>
+                        <p>Master of shadows and the Internet!</p>
+                    </div>
+                    <div class="edit">
+                        <p><img src="./icons/gear.png" alt="" class="icon">edit profile</p>
+                    </div>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-header">
+                    <h1>Education</h1>
+                </div>
+                <div class="education-info">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <p>Dec 2019 - Mar 2020</p>
+                    <p>Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+        </div>
+        <aside class="col-2">
+            <div class="connection-request">
+                req
+            </div>
+            <div class="your-connections">
+
+            </div>
+        </aside>
+    </main>
 </body>
 </html>
